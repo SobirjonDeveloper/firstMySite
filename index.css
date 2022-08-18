@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main{
+    width: 98vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, red, pink, blueviolet);
+    padding: 20px; 
+}
+.top{    
+        width: 100%;
+        display: flex;
+        justify-content: space-between;     
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 700px;
+    margin-left: 50px;
+    font-size: 60px;
+    color: white;
+
+}
+.tekst{
+    display: flex;
+    font-weight: 550;
+    letter-spacing: 80px;
+    padding-right: 0px;
+    width: fit-content;
+}
+.icons{
+   
+    display: flex;
+    justify-content: space-between;
+    width: 525px;
+    padding-right: 75px;
+    margin-top: 3px;
+}
+.desc{
+    font-size: 15px;
+    width: 58px;
+    text-align: center;
+    margin-bottom: 7px;
+    animation: waviy 3s infinite;
+}
+.d1{
+    animation-delay: .2s ;
+}
+.d2{
+    animation-delay: .4s ;
+}
+.d3{
+    animation-delay: .6s ;
+}
+.d4{
+    animation-delay: .8s ;
+}
+
+@keyframes waviy {
+    0%,40%,100% {
+        transform: translateY(0)
+    }
+    20% {
+        transform: translateY(-10px)
+    }
+}
+.logo{
+    width: 110px;
+    height: 110px;
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:20px ;
+    transform: translate(20px,20px,20px,); 
+}
+
+.logo::before{
+    content: "";
+    background-image: conic-gradient(
+        white 20deg,
+        transparent 120deg
+    );
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 5s linear infinite;;
+}
+.logo::after{
+    content: "";
+        width: 140px;
+        height: 140px;  
+        position: absolute;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ff0052;
+        font-size: larger;
+        letter-spacing: 5px;
+       
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    position: absolute;
+}
+.sobirr{
+    display: inline-block;
+    font-size: 50px;
+    background-color: red;
+    width: 270px;
+    color: grey;
+    animation: sobir 8s linear infinite alternate;;
+}
+@keyframes sobir{
+    25%{
+        padding-left: 25%;
+    }
+    50%{
+        padding-left: 50%;
+    }
+    75%{
+        padding-left: 75%;
+    }
+    100%{
+        padding-left: 80%;
+    }
+}
+.body{
+margin-top: 20px;
+height: 65%;
+}
+.section{
+ border-bottom: 1px solid white;
+ border-right: 3px solid white;
+ border-left: 3px solid white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding:10px 20px;
+    color: gray;
+}
+.nav{
+color:black;
+background-color: white;
+border-radius: 3px;
+padding-bottom: 10px;
+
+}
+.trash{
+border: 5px solid rgb(255, 255, 255);
+background-color: white;
+border-radius: 25px;
+color: red;
+margin-left: 5px;
+transition: .2s ease-in-out;
+}
+
+.trash:hover{
+color:white ;
+background-color: #ff2121;
+border: 5px solid #ff2121;
+cursor: pointer;
+transition: .2s ease-in-out;
+
+}
+.arrow{
+     transition: 1s ease-in-out;
+     
+    }
+.arrow:hover{
+    transform: rotate(-360deg);
+     transition: 1s ease-in-out;
+   cursor: pointer;
+}
+.input{
+    background-color: white;
+    height: fit-content;
+    color: #205189;
+    padding-left: 2px;
+    border-radius: 2px;
+}
+input{
+border: 0px solid white;
+padding-left: 5px;
+}
+.add{
+padding-left: 200px;
+padding-bottom: 20px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #205189;
+margin-left: 30px;
+border: 1px solid white;
+width: 70px;
+height: 25px;
+text-align: center;
+cursor: pointer;
+border-radius: 5px;
+transition: .2s ease-in-out;
+}
+.btn:hover{
+background-color: white;
+color: greenyellow;
+transition: .2s ease-in-out;
+}
+.sobir{
+    color: #205189;
+}
